@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+  }
+  
+  .game-container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #mine-count {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-template-rows: repeat(20, 30px);
+    gap: 5px;
+    margin: 20px 0;
+  }
+  
+  .cell {
+    width: 30px;
+    height: 30px;
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .cell.revealed {
+    background-color: #fff;
+    cursor: not-allowed;
+  }
+  
+  .cell.mine {
+    background-color: red;
+  }
+  
+  .cell.safe {
+    background-color: lightgreen;
+  }
+  
+  .cell.one {
+    background-color: lightblue;
+  }
+  
+  .cell.two {
+    background-color: lightyellow;
+  }
+  
+  .cell.three {
+    background-color: lightpink;
+  }
+  
+  .cell.four {
+    background-color: lightcyan;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
